@@ -8,6 +8,14 @@ import Login from './Login';
 import { useEffect } from 'react';
 import { useStateValue } from './StateProvider';
 import { auth } from './firebase';
+import Payment from './Payment';
+import { loadStripe } from '@stripe/stripe-js';
+import { Elements } from '@stripe/react-stripe-js';
+
+
+const promise = loadStripe('pk_test_51Ny5oMCllkDjlmChkG1TbOmt0oznTlfU2WrCBTDl4sh1myzJQlxFtPUl1LX3oRrbU8pQ3UL4r7y7O73rn5zoG9s100Z7ZVIBvz');
+
+
 
 function App() {
   const [{}, dispatch] = useStateValue();
@@ -36,12 +44,15 @@ function App() {
     //BEM conventions for
     <Router>
       <div className="app">
-      <Header /> 
+        <Header />
+       
         <Routes>
-          <Route path="/" element = {<Home />} />
-          <Route path="/home" element = {<Home />} />
+          <Route path="*" element = {<Home/>} />
           <Route path="/checkout" element = {<Checkout />} />
+          <Route path="/header" element = {<Header />} />
           <Route path="/login" element = {<Login />} />
+          <Route path="/payment" element = {<Elements stripe={promise}> <Payment /> </Elements> } />
+          
         </Routes>  
       
       </div>

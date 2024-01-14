@@ -1,0 +1,109 @@
+[debug] [2024-01-02T08:09:07.846Z] ----------------------------------------------------------------------
+[debug] [2024-01-02T08:09:07.860Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\HP Laptop\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2024-01-02T08:09:07.862Z] CLI Version:   13.0.2
+[debug] [2024-01-02T08:09:07.862Z] Platform:      win32
+[debug] [2024-01-02T08:09:07.862Z] Node Version:  v20.10.0
+[debug] [2024-01-02T08:09:07.863Z] Time:          Tue Jan 02 2024 13:09:07 GMT+0500 (Pakistan Standard Time)
+[debug] [2024-01-02T08:09:07.863Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-01-02T08:09:07.868Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-01-02T08:09:08.069Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-01-02T08:09:08.070Z] > authorizing via signed-in user (qureshiismail107@gmail.com)
+[info] i  emulators: Starting emulators: functions, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, hosting"}}
+[debug] [2024-01-02T08:09:08.088Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-01-02T08:09:08.088Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-01-02T08:09:08.088Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[warn] !  emulators: It seems that you are running multiple instances of the emulator suite for project almayas-12. This may result in unexpected behavior. 
+[debug] [2024-01-02T08:09:08.118Z] [hub] writing locator at C:\Users\HPLAPT~1\AppData\Local\Temp\hub-almayas-12.json
+[debug] [2024-01-02T08:09:08.221Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-01-02T08:09:08.222Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-01-02T08:09:08.222Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, pubsub, storage\u001b[22m"}}
+[debug] [2024-01-02T08:09:08.234Z] defaultcredentials: writing to file C:\Users\HP Laptop\AppData\Roaming\firebase\qureshiismail107_gmail_com_application_default_credentials.json
+[debug] [2024-01-02T08:09:08.237Z] Setting GAC to C:\Users\HP Laptop\AppData\Roaming\firebase\qureshiismail107_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\HP Laptop\\AppData\\Roaming\\firebase\\qureshiismail107_gmail_com_application_default_credentials.json"}}
+[debug] [2024-01-02T08:09:08.239Z] > refreshing access token with scopes: []
+[debug] [2024-01-02T08:09:08.240Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-01-02T08:09:08.240Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-01-02T08:09:11.251Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-01-02T08:09:11.251Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2024-01-02T08:09:11.502Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-01-02T08:09:11.502Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-01-02T08:09:11.522Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/almayas-12/adminSdkConfig [none]
+[debug] [2024-01-02T08:09:12.463Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/almayas-12/adminSdkConfig 200
+[debug] [2024-01-02T08:09:12.464Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/almayas-12/adminSdkConfig {"projectId":"almayas-12","storageBucket":"almayas-12.appspot.com"}
+[debug] [2024-01-02T08:09:12.504Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/almayas-12/sites 
+[debug] [2024-01-02T08:09:15.796Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/almayas-12/sites 200
+[debug] [2024-01-02T08:09:15.796Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/almayas-12/sites {"sites":[{"name":"projects/almayas-12/sites/almayas-12","defaultUrl":"https://almayas-12.web.app","appId":"1:577981172564:web:293a57f2eb746f064096c1","type":"DEFAULT_SITE"}]}
+[debug] [2024-01-02T08:09:15.797Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/almayas-12/webApps/1:577981172564:web:293a57f2eb746f064096c1/config [none]
+[debug] [2024-01-02T08:09:16.479Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/almayas-12/webApps/1:577981172564:web:293a57f2eb746f064096c1/config 200
+[debug] [2024-01-02T08:09:16.480Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/almayas-12/webApps/1:577981172564:web:293a57f2eb746f064096c1/config {"projectId":"almayas-12","appId":"1:577981172564:web:293a57f2eb746f064096c1","storageBucket":"almayas-12.appspot.com","apiKey":"AIzaSyAUUIw47y5RfDdjTwjLVf1Rg0wmVIj8Fpc","authDomain":"almayas-12.firebaseapp.com","messagingSenderId":"577981172564","measurementId":"G-SQCB4BLPTQ"}
+[debug] [2024-01-02T08:09:16.491Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/almayas-12 [none]
+[debug] [2024-01-02T08:09:17.143Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/almayas-12 200
+[debug] [2024-01-02T08:09:17.144Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/almayas-12 {"projectId":"almayas-12","projectNumber":"577981172564","displayName":"almayas-12","name":"projects/almayas-12","resources":{"hostingSite":"almayas-12"},"state":"ACTIVE","etag":"1_1000080d-92de-4416-a4d1-d567aae8114d"}
+[info] i  hosting[almayas-12]: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] +  hosting[almayas-12]: Local server: http://127.0.0.1:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5000\u001b[22m\u001b[24m"}}
+[debug] [2024-01-02T08:09:17.208Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-01-02T08:09:17.208Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2024-01-02T08:09:17.209Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\HP Laptop\\.cache\\firebase\\emulators\\ui-v1.11.7\\server\\server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\HP Laptop\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.11.7\\\\server\\\\server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2024-01-02T08:09:17.450Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2024-01-02T08:09:17.450Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "G:\Almayas Web Development\almayas-12\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"G:\\Almayas Web Development\\almayas-12\\functions\" for Cloud Functions..."}}
+[debug] [2024-01-02T08:09:17.497Z] Validating nodejs source
+[debug] [2024-01-02T08:09:21.420Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-01-02T08:09:21.420Z] Building nodejs source
+[debug] [2024-01-02T08:09:21.421Z] Failed to find version of module node: reached end of search path G:\Almayas Web Development\almayas-12\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-01-02T08:09:21.425Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-01-02T08:09:21.478Z] Found firebase-functions binary at 'G:\Almayas Web Development\almayas-12\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8284
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification"}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Hosting   │ 127.0.0.1:5000 │ n/a                             │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
